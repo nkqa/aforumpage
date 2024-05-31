@@ -2225,6 +2225,15 @@ var _hmt = _hmt || [];
 <p>声明：<strong>本坐与麻将以坤巨硬母司没有从属关系</strong> </p>
 <p>Powered by <strong>迪斯库兹!</strong> X3.4 <a href="#" target="_blank">粤ICP备2023071842号</a></p>
 </div></div>
+<script src="https://cdn.staticfile.net/translate.js/3.1.5/translate.js" type="text/javascript"></script>
+<script>
+	translate.setAutoDiscriminateLocalLanguage();	//设置用户第一次用时，自动识别其所在国家的语种进行切
+	translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认就是 'chinese_simplified' 简体中文。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明
+	translate.service.use('client.edge');
+	translate.language.setUrlParamControl(); //url参数后可以加get方式传递 language 参数的方式控制当前网页以什么语种显示
+	translate.listener.start();	//开启html页面变化的监控，对变化部分会进行自动翻译。注意，这里变化区域，是指使用 translate.setDocuments(...) 设置的区域。如果未设置，那么为监控整个网页的变化
+	translate.execute(); //执行翻译初始化操作，显示出select语言选择
+</script>
 </div>
 
 <script language="javascript" type="text/javascript">
@@ -2249,7 +2258,7 @@ window.onresize=function(){wph();}
 <div class="scrolltopa"><a title="返回顶部"><i class="child fa fa-eject"></i></a></div>
 </div>
 
-<script src="https://cdn.staticfile.net/translate.js/3.1.5/translate.js" type="text/javascript"></script>
+
 
 <script type="text/javascript">
 jq(window).scroll(function() {
